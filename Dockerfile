@@ -14,7 +14,7 @@ COPY --chown=1001:0 --from=build /opt/app-root/src/dist/ng-poi-map .
 # USER root
 # RUN chown -R nginx /usr/share/nginx/html
 
-ENV MAP_TITLE="POI Map (Janus IDP & Openshift Workshop Red Hat Summit 2023)"
+ENV MAP_TITLE="POI Map (Janus IDP & Openshift Workshop Red Hat Summit 2024)"
 ENV MAP_ATTRIBUTION="Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery &copy; <a href='http://mapbox.com'>Mapbox</a>"
 ENV MAP_URL=https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}
 ENV MAP_TOKEN=
